@@ -33,3 +33,29 @@ class SibylAuthTestCase(TestCase):
         auth.refresh_token(token)
 
         self.assertIsInstance(auth.TOKEN, str)
+
+
+class SibylUserTestCase(TestCase):
+
+    def test_register(self):
+        # todo: allow register user, using the server root user
+        pass
+
+    def test_get(self):
+        # todo: allow get user info
+        pass
+
+
+class SibylDocumentTestCase(TestCase):
+
+    def test_upload_document(self):
+        pass
+
+    def test_get_documents(self):
+        pass
+
+    def test_approve_document(self):
+        pass
+
+    def test_reject_document(self):
+        pass
